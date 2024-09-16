@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/basic.js" defer></script>
+</head>
+<body>
+    <form>
+        <label for="usrnme">Username:</label>
+        <input type="text" id="input-username"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="input-email"><br>
+        <label for="admn">Admin:</label>
+        <input type="checkbox" id="input-admin"><br>
+        <label for="pht">Photo:</label>
+        <input type="file" accept="image/*" id="input-image" name="imagefile"><br><br>
+        <input type="button" value="Submit" id="submit-data" onclick="addData()"><br><br>
+    </form>
+    <table id="items">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Photo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Photo</th>
+            </tr>
+            <tr>
+                <td>Webmaster</td>
+                <td>webmaster@email.com</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>paavo</td>
+                <td>paavo@email.com</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>matti</td>
+                <td>matti@email.com</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <button id="empty-table" onclick="emptyData()">Empty table</button>
+</body>
+</html>
